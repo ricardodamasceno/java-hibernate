@@ -8,11 +8,8 @@ import java.util.List;
 public interface UserService {
 
     User findById(Long id);
-
     List<User> findAll();
-
     User findByName(String name);
-
     User saveUser(UserRequestVO request);
 
 }
