@@ -27,8 +27,8 @@ public class EmployeeController {
         return employeeService.findAll();
     }
 
-    @GetMapping("/findEmployeeByIdentification")
-    public Employee findEmployeeByIdentification(@RequestParam String identification){
+    @GetMapping("/{identification}/findEmployeeByIdentification")
+    public Employee findEmployeeByIdentification(@PathVariable String identification){
         return employeeService.findByIdentification(identification);
     }
 
